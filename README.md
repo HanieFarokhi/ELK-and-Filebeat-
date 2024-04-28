@@ -1,17 +1,18 @@
-##Install and config ELK
+###Install and config ELK
+
 ![alt text](image-1.png)
-1-	Update System Packages:
+##1-	Update System Packages:
 First, ensure your system packages are up to date:
 
     sudo apt update
     sudo apt upgrade
 
-2-	Install Java:
+##2-	Install Java:
 ELK Stack relies on Java, so install the OpenJDK 11 package:
 
 sudo apt install openjdk-11-jdk
 
-3-	Installing Elasticsearch
+##3-	Installing Elasticsearch
 
 •	Import the Elasticsearch PGP Key
                Download and install the public signing key:
@@ -44,7 +45,7 @@ sudo systemctl enable elasticsearch
 
 Curl http://localhost:9200   or curl http://serverIp:9200
 
-4-	Install Kibana:
+##4-	Install Kibana:
 install the visualization and data exploration component:
 
 sudo apt install kibana
@@ -64,7 +65,7 @@ sudo systemctl enable kibana
 
 http://localhost:5601 or http://serverIp:5601
 
-5-	Install Logstash:
+#5-	Install Logstash:
 Logstash dynamically ingests, transforms, and ships your data regardless of format or complexity. Derive structure from unstructured data with grok, decipher geo coordinates from IP addresses, anonymize or exclude sensitive fields, and ease overall processing.
 
               sudo apt install logstash
