@@ -1,7 +1,8 @@
 ### Install and config ELK
 
 ![alt text](image-1.png)
-##1-	Update System Packages:
+
+## 1-	Update System Packages:
 First, ensure your system packages are up to date:
 
     sudo apt update
