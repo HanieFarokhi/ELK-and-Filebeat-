@@ -84,3 +84,17 @@ sudo systemctl start logstash
 sudo systemctl enable logstash
 
 
+
+## 6-   Filebeat deployment : 
+
+           Deploying filebeat in all client that you want to parse and collect logs, Firstly you should deploy       Filebeat package in all servers, After that set filebeat config and connect to logstash service by set input and output config (etc/logstash/conf.d/nameofconfig.conf
+
+•	apt-get install apt-transport-https -y
+•	wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | apt-key add -
+•	echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | tee /etc/apt/sources.list.d/elastic-7.x.list
+•	apt-get update -y
+•	apt-get install filebeat -y
+•	nano /etc/filebeat/filebeat.yml
+
+
+
